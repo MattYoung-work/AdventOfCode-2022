@@ -7,7 +7,7 @@ df = {}
 count = []
 worry = 1
 
-with open('./test.txt','r') as f:
+with open('./input.txt','r') as f:
   for line in f:
     foo = line.strip().split()
     if not foo: pass
@@ -22,7 +22,7 @@ with open('./test.txt','r') as f:
 for i in range(len(items)): count.append(0)
 for i in range(len(items)): worry *= test[i]
 
-for n in range(10000):
+for n in range(20):
   for i in range(len(items)):
     for old in items[i]:
       count[i] += 1
